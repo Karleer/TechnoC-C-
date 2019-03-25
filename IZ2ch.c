@@ -111,7 +111,7 @@ int main() {
             getAnswer(string);
         } else {
             printf("[error]");
-                        break;
+            break;
         }
         free(string);
     }
@@ -420,7 +420,7 @@ void insertNumberInString(int number, char *begin[]) {
     assert(*begin != NULL);
     if ((begin == NULL) || (*begin == NULL)) {
             return;
-        }
+    }
 
     size_t size = getNumberSize(number);
 
@@ -625,7 +625,7 @@ char *checkString(const char *string, size_t size, int *error) {
     }
     if (*error != NO_ERROR) {
             return NULL;
-        }
+    }
     // Если одна из круглых скобок не закрылась
     if (circleBracketsAmount > 0) {
         *error = ERROR_NO_CIRCLE_END;
