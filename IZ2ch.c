@@ -419,7 +419,7 @@ void insertNumberInString(int number, char *begin[]) {
     assert(begin != NULL);
     assert(*begin != NULL);
     if ((begin == NULL) || (*begin == NULL)) {
-            return;
+        return;
     }
 
     size_t size = getNumberSize(number);
